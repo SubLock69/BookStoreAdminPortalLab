@@ -15,9 +15,24 @@
         margin: 0;
         padding: 0;
       }
+      #backBtn {
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-left: 5px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-weight: 900;
+        z-index: 100;
+        width: 50px; height: 50px;
+        font-size: 2.4em;
+      }
     </style>
   </head>
   <body>
+      <a id="backBtn" href="./index.html"><<</a>
     <redoc spec-url='./api.schema.json'></redoc>
     <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>
   </body>

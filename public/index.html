@@ -10,10 +10,24 @@
 <body>
     <div id="root">
         <div class="container">
-            <h1 class="">Books</h1>
+            <div class="d-flex flex-row justify-content-between">
+                <h1 class="">Books</h1>
+                <form method="get" action="./admin.html" class="pt-2">
+                    <div class="form-row">
+                        <input type="text" name="username" id="username" placeholder="Username..." class="form-control px-1 mx-1" required />
+                        <input type="password" name="password" id="password" placeholder="Password..." class="form-control px-1 mx-1" required />
+                        <input type="submit" class="form-control btn-primary" />
+                    </div>
+                </form>
+            </div>
             <div class="row book-container">
             </div>
         </div>
+    </div>
+
+    <!--Unimportant footer for my benefit while testing-->
+    <div style="position: absolute; bottom: 10%; left: 50%;">
+        <a href="api-docs.html" class="btn">API Reference</a>
     </div>
     <!-- Our JavaScript Code  -->
     <script src="index.js"></script>
